@@ -2,7 +2,7 @@
 
 @font-face{
     font-family:'NotoSansCJKkr-Black';
-    src: url("NotoSansCJKkr-Black.otf") format('opentype');
+    src: url('font/NotoSansCJKkr-Black.otf') format('opentype');
 }
 
 ul,
