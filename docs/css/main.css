@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,700,900&display=swap&subset=korean');
 
 ul,
 li {
@@ -9,57 +9,86 @@ li {
     list-style: none;
 }
 
-.gnb-left {
+.left-side {
+    top: 0;
+    bottom: 0;
+    left: 0;
     border-right: solid 1px #eeeeee;
     height: 100vh;
     width: 360px;
     position: fixed;
-    float: left;
     background: #ffffff;
 }
 
 .logo {
-    position: relative;
-    padding-top: 10vh;
-    width: 160px;
-    height: 260px;
-    margin: 0 auto;
-}
-
-.logo-sign {
-    position: absolute;
-    margin: 62px 0 0 38px;
-}
-
-.nav-menu {
     text-align: center;
-    margin-top: 11vh;
+    padding: 100px;
+}
+
+.logo > a {
+    display: inline-block;
+    position: relative;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table-cell > img {
+    width: 100%;
+    height: auto;
+}
+
+.logo-image {
+    max-height: 160px;
+}
+
+.gnb-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.table-full {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+nav.nav-menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .site-name {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
+    margin-top: 150px;
 }
 
 .menu-name {
-    margin-top: 100px; 
+    margin-top: 60px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
     line-height: 40px;
 }
 
-.email{
-    margin-top: 22vh;
-}
-
-.email>span{
+.email {
+    text-align: center;
+    display: table-cell;
     font-size: 10px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
+    vertical-align: bottom;
 }
 
 .pf-board {
     padding-left: 390px;
+    width: 100%;
 }
 
 .pf-contents-board {}
@@ -78,5 +107,12 @@ li {
 
     .pf-board {
         padding-left: 15px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .logo {
+        text-align: center;
+        padding: 50px 120px 50px 120px;
     }
 }
