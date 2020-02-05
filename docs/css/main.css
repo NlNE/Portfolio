@@ -1,21 +1,46 @@
-body{
+body {
     margin: 0 auto;
 }
 
-section{
+section {
+    height: 100vh;
+    padding-left: 7.2%;
+    padding-right: 7.2%;
+}
+
+.wrap {}
+
+.Challenge > h1 {
+    display: inline-block;
+}
+
+.inner-1 {
+    display: table-cell;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.slogan h1 {
+    font-size: 5.8vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    color: #000000;
+}
+
+h1.slogan-dot {
+    color: red;
+}
+
+.splash img {
     height: 100vh;
 }
 
-.cont1-img{
-    height: 100vh;
+#cont2{
+    background: gray;
 }
 
-.wrap{
-
-}
-.inner-1{
-    background: blue;
-}
-.inner-2{
-
+@media screen and (max-width: 768px) {
+    .slogan h1 {
+        font-size: 12vw;
+    }
 }
