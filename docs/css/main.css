@@ -7,15 +7,6 @@ li {
     list-style: none;
 }
 
-section {
-    height: 100vh;
-    width: 100%;
-    padding-left: 7.2%;
-    padding-right: 7.2%;
-}
-
-.wrap {}
-
 .gnb-flex-container {
     position: fixed;
     width: 100%;
@@ -47,6 +38,27 @@ section {
     margin-left: 60px;
 }
 
+div#fullpage {
+    overflow: hidden;
+}
+
+.main section {
+    height: 100vh;
+    width: 100%;
+    padding-left: 7.2%;
+    padding-right: 7.2%;
+}
+
+.main section:nth-child(1) {}
+
+.main section:nth-child(2) {}
+
+.main section:nth-child(3) {}
+
+.main section:nth-child(4) {}
+
+.main section:nth-child(5) {}
+
 .Challenge > h1 {
     display: inline-block;
 }
@@ -72,21 +84,54 @@ h1.slogan-dot {
     height: 100vh;
 }
 
-#cont2 {
-    background: gray;
+div#left-content {
+    height: 100vh;
+    display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+div#circle1 {
+    background-color: #FFF1F2;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 600px;
+}
+
+#left-content img#img01{
+    position: absolute;
+    width: 15.6vw;
+    z-index: 2;
+}
+
+#left-content img#img02{
+    position: absolute;
+    transform: translate(10vw, 3vh);
+    width: 10.4vw;
+    z-index: 1;
+}
+
+#left-content img#img03{
+    position: absolute;
+    transform: translate(-10vw, 3vh);
+    width: 10.4vw;
+    z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
-    .slogan{
+    .slogan {
         margin-left: -3.3%;
     }
+
     .slogan h1 {
         font-size: 12.5vw;
     }
-    .splash img{
+
+    .splash img {
         display: none;
     }
-    .gnb ul{
+
+    .gnb ul {
         display: none;
     }
 }
