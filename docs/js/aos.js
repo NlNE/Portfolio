@@ -80,8 +80,9 @@
                 }) : document.addEventListener(x.startEvent, function () {
                     j(!0)
                 }), window.addEventListener("resize", (0, f.default)(j, x.debounceDelay, !0)), window.addEventListener("orientationchange", (0, f.default)(j, x.debounceDelay, !0)), window.addEventListener("scroll", (0, u.default)(function () {
-                    (0, b.default)(w, x.once)
-                }, x.throttleDelay)), x.disableMutationObserver || (0, d.default)("[data-aos]", O), w)
+                        (0, b.default)(w, x.once)
+                    },
+                    x.throttleDelay)), x.disableMutationObserver || (0, d.default)("[data-aos]", O), w)
             };
         e.exports = {
             init: z,
