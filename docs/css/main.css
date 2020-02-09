@@ -55,7 +55,7 @@ li {
 
 .main section:nth-child(5) {}
 
-.Challenge > h1 {
+#Challenge > h1 {
     display: inline-block;
 }
 
