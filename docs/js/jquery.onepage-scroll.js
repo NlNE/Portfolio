@@ -206,8 +206,8 @@
             next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
             if (next.length > 0) {
                 if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
-                current.removeClass("active")
-                next.addClass("active")
+                $(".active").find(".animation").removeClass("aos-init aos-animate"), current.removeClass("active")
+                next.addClass("active"), $(".active").find(".animation").addClass("aos-init aos-animate")
                 $(".onepage-pagination li a" + ".active").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass("active");
                 $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
@@ -227,6 +227,9 @@
             //start modification
             var valForTest = false;
             var typeOfRF = typeof settings.responsiveFallback
+            
+            $(".active").find(".animation").removeClass("aos-init aos-animate"), current.removeClass("active")
+                next.addClass("active"), $(".active").find(".animation").addClass("aos-init aos-animate")
 
             if (typeOfRF == "number") {
                 valForTest = $(window).width() < settings.responsiveFallback;
