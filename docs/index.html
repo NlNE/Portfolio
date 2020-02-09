@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/onepage-scroll.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap&subset=korean" rel="stylesheet">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/onepage_scroll.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/aos.js"></script>
-    <script src="js/onepage_scroll.js"></script>
+    <script src="js/jquery.onepage-scroll.js"></script>
     <title>Designer - NINE</title>
 </head>
 
@@ -28,7 +28,7 @@
             </ul>
         </div>
     </div>
-    <div id="main" class="scroll-container">
+    <div class="main">
         <section>
             <div class="container-fluid">
                 <div class="row">
@@ -59,7 +59,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-5 offset-1" id="left-content">
-                        <img id="img01" class="aos-init" data-aos="fade-up" src="images/uiux/bePlan/bePlan_01.png" alt="">
+                        <img id="img01" data-aos="fade-up" src="images/uiux/bePlan/bePlan_01.png" alt="">
                         <img id="img02" src="images/uiux/bePlan/bePlan_02.png" alt="">
                         <img id="img03" src="images/uiux/bePlan/bePlan_03.png" alt="">
                         <div id="circle1"></div>
@@ -83,18 +83,12 @@
         </section>
         <!--section.sec04-->
     </div>
-    <script type="text/javascript">
-        new fullScroll({
-            displayDots: true,
-            dotsPosition: 'left',
-            animateTime: 0.7,
-            animateFunction: 'ease'
+    <script>
+        AOS.init({
         });
-
     </script>
     <script type="text/javascript">
-        AOS.init({});
-
+        $(".main").onepage_scroll();
     </script>
 </body>
 
