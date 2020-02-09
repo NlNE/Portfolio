@@ -102,14 +102,14 @@ div#circle1 {
 
 #left-content img#img02{
     position: absolute;
-    transform: translate(10vw, 3vh);
+    margin: 3vh 0 0 10vw;
     width: 10.4vw;
     z-index: 1;
 }
 
 #left-content img#img03{
     position: absolute;
-    transform: translate(-10vw, 3vh);
+    margin: 3vh 0 0 -10vw;
     width: 10.4vw;
     z-index: 1;
 }
