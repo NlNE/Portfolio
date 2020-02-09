@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/onepage-scroll.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="css/onepage-scroll.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap&subset=korean" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -76,7 +76,7 @@
                                     ios-@2X~@3X
                                 </p>
                                 <p class="description2">
-                                    UI 디자인 수정 > 디자인 가이드 작성<br/>(UI가이드 프로그램 사용 이전 > PPT 가이드)
+                                    UI 디자인 수정 > 디자인 가이드 작성<br />(UI가이드 프로그램 사용 이전 > PPT 가이드)
                                 </p>
                             </div>
                             <div class="sub-img">
@@ -115,6 +115,9 @@
         });
     </script>
     <script type="text/javascript">
-        $(".main").onepage_scroll();
+        if(screen.width>768){
+            $(".main").onepage_scroll({
+            });
+        };            
     </script>
 </body></html>
