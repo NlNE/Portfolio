@@ -26,6 +26,16 @@ li {
     color: #000000;
 }
 
+.gnb-mobile {
+    display: none;
+}
+
+.spinner-master input[type=checkbox] {
+    display: none;
+}
+
+
+
 .logo {
     line-height: 7.4vh;
     vertical-align: middle;
@@ -161,9 +171,10 @@ div#circle1 {
 }
 
 @media screen and (max-width: 768px) {
-    .inner-1{
+    .inner-1 {
         align-items: center;
     }
+
     .slogan h1 {
         font-size: 13vw;
     }
@@ -172,8 +183,93 @@ div#circle1 {
         display: none;
     }
 
-    .gnb ul {
+    .gnb {
         display: none;
+    }
+
+    .gnb-mobile {
+        margin: 0 auto;
+        font-size: 1.25rem;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 900;
+        color: #000000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 92%;
+        height: 100%;
+    }
+
+    .spinner-master * {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .logo {
+        flex-grow: 1;
+    }
+
+
+    .spinner-master {
+        position: relative;
+        height: 38px;
+        width: 36px;
+    }
+
+    .spinner-master label {
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 20px;
+        left: 0;
+    }
+
+    .spinner-master .spinner {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        padding: 0;
+        background-color: #000;
+    }
+
+    .spinner-master .diagonal.part-1 {
+        position: relative;
+        float: right;
+    }
+
+    .spinner-master .horizontal {
+        position: relative;
+        float: right;
+        width: 24px;
+        margin-top: 6px;
+    }
+
+    .spinner-master .diagonal.part-2 {
+        position: relative;
+        float: right;
+        width: 30px;
+        margin-top: 6px;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal {
+        opacity: 0;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        width: 36px;
+        margin-top: 12px;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        width: 36px;
+        margin-top: -14px;
     }
 
     div#left-content {
