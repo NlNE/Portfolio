@@ -30,6 +30,14 @@
         direction: 'vertical'
     };
 
+    var windowWidth = $(window).width();
+
+    if (windowWidth <= 768) {
+        $(".logo").click( function(){
+            $('html,body').animate({scrollTop: '0'}, 600);
+            return false;
+        })
+    }
 
     /*------------------------------------------------*/
     /*  Credit: Eike Send for the awesome swipe event */
@@ -205,8 +213,8 @@
             next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
             if (next.length > 0) {
                 if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
-                $(".active").find(".animation").removeClass("aos-init aos-animate"), current.removeClass("active")
-                next.addClass("active"), $(".active").find(".animation").addClass("aos-init aos-animate")
+                $(".active").find(".animation").removeClass("aos-init aos-animate"), current.removeClass("active");
+                next.addClass("active"), $(".active").find(".animation").addClass("aos-init aos-animate");
                 $(".onepage-pagination li a" + ".active").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass("active");
                 $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
@@ -379,6 +387,27 @@
                 el.moveTo(page_index);
             });
         }
+
+        $(".logo").click(function () {
+            var page_index = $(this).data("index");
+            el.moveTo(page_index);
+        }); // 클래스 "logo" 클릭시 data-index="n"으로 이동
+
+        $(".uiux").click(function () {
+            var page_index = $(this).data("index");
+            el.moveTo(page_index);
+        }); // 클래스 "uiux" 클릭시 data-index="n"으로 이동
+
+        $(".other").click(function () {
+            var page_index = $(this).data("index");
+            el.moveTo(page_index);
+        }); // 클래스 "other" 클릭시 data-index="n"으로 이동
+
+        $(".contact").click(function () {
+            var page_index = $(this).data("index");
+            el.moveTo(page_index);
+        }); // 클래스 "contact" 클릭시 data-index="n"으로 이동
+
 
         $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
             event.preventDefault();
