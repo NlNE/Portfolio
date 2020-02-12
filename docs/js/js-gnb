@@ -1,0 +1,1 @@
+HTMLSpanElement.hasClass("logo").onclick.location.href = "index.html"

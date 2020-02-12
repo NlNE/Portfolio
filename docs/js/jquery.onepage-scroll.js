@@ -14,7 +14,6 @@
  *
  * ========================================================== */
 
-
 ! function ($) {
 
     var defaults = {
@@ -31,11 +30,13 @@
         direction: 'vertical'
     };
 
+
     /*------------------------------------------------*/
     /*  Credit: Eike Send for the awesome swipe event */
     /*------------------------------------------------*/
 
     $.fn.swipeEvents = function () {
+
         return this.each(function () {
 
             var startX,
@@ -145,11 +146,9 @@
                 pos = (index * 100) * -1;
             }
             if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
-            $(".active").find(".animation").removeClass("aos-init aos-animate"), current.removeClass("active"), 
-            next.addClass("active")
+            $(".active").find(".animation").removeClass("aos-init aos-animate"), current.removeClass("active"),
+                next.addClass("active")
             $(".active").find(".animation").addClass("aos-init aos-animate");
-
-
 
             if (settings.pagination == true) {
                 $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
@@ -381,7 +380,6 @@
             });
         }
 
-
         $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
             event.preventDefault();
             var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
@@ -433,6 +431,5 @@
         }
         return false;
     }
-
 
 }(window.jQuery);

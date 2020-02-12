@@ -30,6 +30,11 @@ li {
     line-height: 7.4vh;
     vertical-align: middle;
     flex-grow: 1;
+    cursor: pointer;
+}
+
+.gnb-menu li {
+    cursor: pointer;
 }
 
 .gnb-flex-container li {
@@ -60,9 +65,10 @@ li {
 }
 
 .inner-1 {
-    display: table-cell;
     height: 100vh;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .slogan h1 {
@@ -155,12 +161,11 @@ div#circle1 {
 }
 
 @media screen and (max-width: 768px) {
-    .slogan {
-        margin-left: -3.3%;
+    .inner-1{
+        align-items: center;
     }
-
     .slogan h1 {
-        font-size: 12.5vw;
+        font-size: 13vw;
     }
 
     .splash img {
@@ -222,7 +227,6 @@ div#circle1 {
     }
 
     .app-name {
-        margin-left: -0.3vw;
         font-size: 4.2vw;
         font-family: 'Noto Sans KR', sans-serif;
         font-weight: 900;
