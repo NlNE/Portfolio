@@ -10,16 +10,17 @@ li {
 .gnb-flex-container {
     position: fixed;
     width: 100%;
-    height: 7.4vh;
     background: #ffffff;
     z-index: 5000;
 }
 
 .gnb {
-    margin: 0 auto;
-    width: 85.4%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85.4%;
+    height: 7.4vh;
     font-size: 1.25rem;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
@@ -34,11 +35,9 @@ li {
     display: none;
 }
 
-
-
 .logo {
     line-height: 7.4vh;
-    vertical-align: middle;
+    vertical-align: center;
     flex-grow: 1;
     cursor: pointer;
 }
@@ -206,10 +205,6 @@ div#circle1 {
         display: block;
     }
 
-    .logo {
-        flex-grow: 1;
-    }
-
 
     .spinner-master {
         position: relative;
@@ -223,13 +218,13 @@ div#circle1 {
         z-index: 99;
         height: 100%;
         width: 100%;
-        top: 20px;
+        top: 18px;
         left: 0;
     }
 
     .spinner-master .spinner {
         position: absolute;
-        height: 4px;
+        height: 3px;
         width: 100%;
         padding: 0;
         background-color: #000;
@@ -262,14 +257,14 @@ div#circle1 {
         transform: rotate(135deg);
         -webkit-transform: rotate(135deg);
         width: 36px;
-        margin-top: 12px;
+        margin-top: 10px;
     }
 
     .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {
         transform: rotate(-135deg);
         -webkit-transform: rotate(-135deg);
         width: 36px;
-        margin-top: -14px;
+        margin-top: -12px;
     }
 
     div#left-content {
