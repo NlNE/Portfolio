@@ -33,8 +33,10 @@
     var windowWidth = $(window).width();
 
     if (windowWidth <= 768) {
-        $(".logo").click( function(){
-            $('html,body').animate({scrollTop: '0'}, 600);
+        $(".logo").click(function () {
+            $('html,body').animate({
+                scrollTop: '0'
+            }, 600);
             return false;
         })
     }

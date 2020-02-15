@@ -1,0 +1,295 @@
+.gnb-flex-container {
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    z-index: 5000;
+}
+
+.gnb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85.4%;
+    height: 7.4vh;
+    font-size: 1.25rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    color: #000000;
+}
+
+.gnb-mobile {
+    display: none;
+}
+
+.logo {
+    line-height: 7.4vh;
+    vertical-align: center;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.gnb-menu li {
+    cursor: pointer;
+}
+
+.gnb-flex-container li {
+    line-height: 7.4vh;
+    float: left;
+    margin-left: 60px;
+}
+
+nav.sidebar {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .body{
+        padding-top: 60px;
+    }
+    
+    .gnb-flex-container {
+        display: none;
+    }
+
+    .gnb-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 5000;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #000;
+        font-size: 1.25rem;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        padding: 0 20px;
+        transition: top 0.4s ease-in-out;
+    }
+
+    .menu-trigger {
+        vertical-align: middle;
+        position: relative;
+        right: 0;
+        width: 38px;
+        height: 26px;
+    }
+
+    .menu-trigger,
+    .menu-trigger span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .menu-trigger span:nth-of-type(1) {
+        top: 0px;
+    }
+
+    .menu-trigger span:nth-of-type(2) {
+        top: 12px;
+    }
+
+    .menu-trigger span:nth-of-type(3) {
+        bottom: 0;
+    }
+
+    /* type-07 */
+    /* 라인이 하나로 합쳐졌다가 엑스자 만들기 */
+    .menu-trigger span:nth-of-type(1) {
+        -webkit-animation: menu-bar07-01 .75s forwards;
+        animation: menu-bar07-01 .75s forwards;
+    }
+
+    @-webkit-keyframes menu-bar07-01 {
+        0% {
+            -webkit-transform: translateY(12px) rotate(45deg);
+        }
+
+        50% {
+            -webkit-transform: translateY(12px) rotate(0);
+        }
+
+        100% {
+            -webkit-transform: translateY(0) rotate(0);
+        }
+    }
+
+    @keyframes menu-bar07-01 {
+        0% {
+            transform: translateY(12px) rotate(45deg);
+        }
+
+        50% {
+            transform: translateY(12px) rotate(0);
+        }
+
+        100% {
+            transform: translateY(0) rotate(0);
+        }
+    }
+
+    .menu-trigger span:nth-of-type(2) {
+        transition: all .25s .25s;
+        opacity: 1;
+    }
+
+    .menu-trigger span:nth-of-type(3) {
+        -webkit-animation: menu-bar07-02 .75s forwards;
+        animation: menu-bar07-02 .75s forwards;
+    }
+
+    @-webkit-keyframes menu-bar07-02 {
+        0% {
+            -webkit-transform: translateY(-12px) rotate(-45deg);
+        }
+
+        50% {
+            -webkit-transform: translateY(-12px) rotate(0);
+        }
+
+        100% {
+            -webkit-transform: translateY(0) rotate(0);
+        }
+    }
+
+    @keyframes menu-bar07-02 {
+        0% {
+            transform: translateY(-12px) rotate(-45deg);
+        }
+
+        50% {
+            transform: translateY(-12px) rotate(0);
+        }
+
+        100% {
+            transform: translateY(0) rotate(0);
+        }
+    }
+
+    .menu-trigger.active span:nth-of-type(1) {
+        -webkit-animation: active-menu-bar07-01 .75s forwards;
+        animation: active-menu-bar07-01 .75s forwards;
+    }
+
+    @-webkit-keyframes active-menu-bar07-01 {
+        0% {
+            -webkit-transform: translateY(0) rotate(0);
+        }
+
+        50% {
+            -webkit-transform: translateY(12px) rotate(0);
+        }
+
+        100% {
+            -webkit-transform: translateY(12px) rotate(45deg);
+        }
+    }
+
+    @keyframes active-menu-bar07-01 {
+        0% {
+            transform: translateY(0) rotate(0);
+        }
+
+        50% {
+            transform: translateY(12px) rotate(0);
+        }
+
+        100% {
+            transform: translateY(12px) rotate(45deg);
+        }
+    }
+
+    .menu-trigger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .menu-trigger.active span:nth-of-type(3) {
+        -webkit-animation: active-menu-bar07-02 .75s forwards;
+        animation: active-menu-bar07-02 .75s forwards;
+    }
+
+    @-webkit-keyframes active-menu-bar07-02 {
+        0% {
+            -webkit-transform: translateY(0) rotate(0);
+        }
+
+        50% {
+            -webkit-transform: translateY(-12px) rotate(0);
+        }
+
+        100% {
+            -webkit-transform: translateY(-12px) rotate(-45deg);
+        }
+    }
+
+    @keyframes active-menu-bar07-02 {
+        0% {
+            transform: translateY(0) rotate(0);
+        }
+
+        50% {
+            transform: translateY(-12px) rotate(0);
+        }
+
+        100% {
+            transform: translateY(-12px) rotate(-45deg);
+        }
+    }
+    nav.sidebar{
+        padding-top: 60px;
+        font-size: 1.25rem;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 900;
+        color: #fff;
+    }
+    
+    nav.sidebar.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        animation: active-sidebar .4s;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+    }
+    
+    nav.sidebar.active ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav.sidebar.active ul li{
+        text-align: center;
+        margin: 20px;
+    }
+
+    @keyframes active-sidebar {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .nav-up { top: -60px; // 헤더 높이와 같게 }
+}

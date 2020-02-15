@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gnb-nav.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" media="screen and (min-width:768px)" href="css/onepage-scroll.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,23 +19,25 @@
             <span data-index="1" class="logo">Designer - NINE</span>
             <ul class="gnb-menu">
                 <li class="uiux" data-index="2">UI/UX</li>
-                <li class="other" data-index="">Other</li>
-                <li class="contact" data-index="">Contact</li>
+                <li class="other" data-index="6">Other</li>
+                <li class="contact" data-index="8">Contact</li>
             </ul>
         </div>
-        <div class="gnb-mobile">
-            <div class="logo">
-                <span data-index="1" class="logo">Designer - NINE</span>
-            </div>
-            <div class="spinner-master">
-                <input type="checkbox" id="spinner-form" />
-                <label for="spinner-form" class="spinner-spin">
-                    <div class="spinner diagonal part-1"></div>
-                    <div class="spinner horizontal"></div>
-                    <div class="spinner diagonal part-2"></div>
-                </label>
-            </div>
-        </div>
+    </div>
+    <div class="gnb-mobile">
+        <span data-index="1" class="logo">Designer - NINE</span>
+        <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <nav class="sidebar">
+            <ul>
+                <li onclick="fnMove('2')">UI/UX</li>
+                <li onclick="fnMove('6')">Other</li>
+                <li onclick="fnMove('8')">Contact</li>
+            </ul>
+        </nav>
     </div>
     <div class="main">
         <section id="sec1">
@@ -335,9 +338,9 @@
         <!--section#sec08-->
     </div>
     <script src="js/jQuery3.4.1.js"></script>
+    <script src="js/gnb-nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
     <script src="js/aos.js"></script>
     <script src="js/jquery.onepage-scroll.js"></script>
     <script type="text/javascript">
