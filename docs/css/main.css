@@ -59,15 +59,10 @@ li {
     padding-right: 7.2%;
 }
 
-.main section:nth-child(1) {}
-
-.main section:nth-child(2) {}
-
-.main section:nth-child(3) {}
-
-.main section:nth-child(4) {}
-
-.main section:nth-child(5) {}
+#sec6,
+#sec7 {
+    background-color: #f0f0f0;
+}
 
 #Challenge > h1 {
     display: inline-block;
@@ -102,17 +97,30 @@ div#left-content {
     -webkit-align-items: center;
 }
 
-div#circle1 {
-    background-color: #FFF1F2;
+div.circle {
     width: 100%;
     height: 0;
     padding: 50% 0;
     border-radius: 600px;
 }
 
+div.circle.pink {
+    background-color: #FFF1F2;
+}
+
+div.circle.blue {
+    background-color: #ECF2FC;
+}
+
 #left-content img#img01 {
     position: absolute;
     width: 15.6vw;
+    z-index: 2;
+}
+
+#left-content img#img-full {
+    position: absolute;
+    width: 100%;
     z-index: 2;
 }
 
@@ -163,7 +171,15 @@ div#circle1 {
     margin: 15px 0;
 }
 
+#sec8 .description2 {
+    font-size: 1.2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
 .sub-img {
+    border: 2px solid #f0f0f0;
     border-radius: 20px;
     margin-top: 15px;
     width: 100%;
@@ -172,6 +188,16 @@ div#circle1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#sec6 .sub-img,
+#sec7 .sub-img,
+#sec8 .sub-img {
+    margin-top: 15px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .btn-more {
@@ -191,8 +217,27 @@ div#circle1 {
     cursor: pointer;
 }
 
+#sec6 .btn-more,
+#sec7 .btn-more,
+#sec8 .btn-more {
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+}
+
 .sub-img img {
     width: 100%;
+}
+
+.tool-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-wrap img{
+    width: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -299,16 +344,64 @@ div#circle1 {
         padding: 0 20px;
     }
 
+
+    #sec2,
+    #sec3,
+    #sec4 {
+        padding-bottom: 240px;
+    }
+
+    #sec5 {
+        padding-bottom: 160px;
+    }
+
+    #sec6{
+        padding-bottom: 180px; 
+    }
+    
+    #sec7{
+        padding-bottom: 100px; 
+    }
+
+
+    #sec8 {
+        padding-top: 100px;
+        height: 100vh;
+    }
+
     div#left-content {
-        height: 20vh;
+        height: 35vh;
+        margin-bottom: -60px;
         display: flex;
         -webkit-justify-content: center;
         -webkit-align-items: center;
     }
 
+    #sec6 div#left-content {
+        height: 80vh;
+        margin-bottom: -140px;
+    }
+
+    #sec7 div#left-content {
+        height: 50vh;
+        margin-bottom: -80px;
+    }
+
+
     #left-content img#img01 {
         position: absolute;
         margin-top: -50px;
+        width: 136px;
+        z-index: 2;
+    }
+
+    #left-content img#img-full {
+        margin-top: -50px;
+    }
+
+    #sec3 #left-content img#img01 {
+        position: absolute;
+        margin-top: -40px;
         width: 136px;
         z-index: 2;
     }
@@ -320,9 +413,23 @@ div#circle1 {
         z-index: 1;
     }
 
+    #sec3 #left-content img#img02 {
+        position: absolute;
+        margin: -30px 0 0 70px;
+        width: 92px;
+        z-index: 1;
+    }
+
     #left-content img#img03 {
         position: absolute;
         margin: -25px 0 0 -70px;
+        width: 92px;
+        z-index: 1;
+    }
+
+    #sec3 #left-content img#img03 {
+        position: absolute;
+        margin: -30px 0 0 -70px;
         width: 92px;
         z-index: 1;
     }
@@ -360,11 +467,32 @@ div#circle1 {
         margin: 10px 0;
     }
 
+    #sec6 .sub-img,
+    #sec7 .sub-img,
+    #sec8 .sub-img {
+        align-items: center;
+    }
+
     .btn-more {
         margin-top: 140px;
     }
-    
-    .sub-img{
-        margin-bottom: 300px;
+
+    #sec4 .btn-more {
+        margin-top: 168px;
     }
+
+    #sec6 .btn-more,
+    #sec7 .btn-more,
+    #sec8 .btn-more {
+        margin-top: 30px;
+    }
+    
+    .tool-wrap{
+        margin-bottom: 20px;
+    }
+    
+    .tool-container div:nth-child(5){
+        margin-bottom: 40px;
+    }
+
 }
