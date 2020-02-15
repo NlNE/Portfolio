@@ -9,6 +9,7 @@ burger.each(function (index) {
         e.preventDefault();
         $(this).toggleClass('active');
         sidebar.toggleClass('active');
+        $('html, body').css('overflow', 'hidden');
     })
 });
 
@@ -20,6 +21,7 @@ function fnMove(seq) {
 
     burger.removeClass('active');
     sidebar.removeClass('active');
+    $('html, body').css('overflow', 'auto');
 }
 
 // Hide Header on on scroll down
