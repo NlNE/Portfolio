@@ -188,6 +188,7 @@ div#circle1 {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 900;
     color: #000000;
+    cursor: pointer;
 }
 
 .sub-img img {
@@ -335,7 +336,7 @@ div#circle1 {
 
     .app-sub {
         position: absolute;
-        margin: -12px 0 0 2px;
+        margin: -8px 0 0 2px;
         font-size: 1rem;
         font-family: 'Noto Sans KR', sans-serif;
         font-weight: 900;
@@ -356,14 +357,14 @@ div#circle1 {
     }
 
     .description-wrap p {
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
-    .sub-img {
-        border-radius: 20px;
-        margin-top: 15px;
-        width: 100%;
-        height: 302px;
-        overflow: hidden;
+    .btn-more {
+        margin-top: 140px;
+    }
+    
+    .sub-img{
+        margin-bottom: 300px;
     }
 }
