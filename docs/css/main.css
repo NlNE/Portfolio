@@ -218,7 +218,7 @@ div.circle.blue {
     #sec2,
     #sec3,
     #sec4 {
-        padding-bottom: 240px;
+        padding-bottom: 140px;
     }
 
     #sec5 {
@@ -240,8 +240,8 @@ div.circle.blue {
     }
 
     div#left-content {
-        height: 35vh;
-        margin-bottom: -60px;
+        height: 60vh;
+        margin-bottom: -160px;
         display: flex;
         -webkit-justify-content: center;
         -webkit-align-items: center;
