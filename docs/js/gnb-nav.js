@@ -9,7 +9,7 @@ burger.each(function (index) {
         e.preventDefault();
         $(this).toggleClass('active');
         sidebar.toggleClass('active');
-        $('html, body').css('overflow', 'hidden');
+        $('html, body').toggleClass('menu-active');
     })
 });
 

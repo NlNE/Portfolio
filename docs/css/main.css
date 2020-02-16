@@ -2,6 +2,10 @@ body {
     margin: 0 auto;
 }
 
+#loading-img {
+    display: none;
+}
+
 ul,
 li {
     list-style: none;
@@ -184,18 +188,30 @@ div.circle.blue {
     width: 100%;
 }
 
-.tool-wrap{
+.tool-wrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.tool-wrap img{
+.tool-wrap img {
     width: 60px;
 }
 
 @media screen and (max-width: 768px) {
+
+    #loading-img {
+        display: block;
+        position: absolute;
+        text-align: center;
+    }
+
+    #loading-img img {
+        width: 100%;
+        height: 100vh;
+    }
+
     .inner-1 {
         align-items: center;
     }
@@ -225,12 +241,12 @@ div.circle.blue {
         padding-bottom: 160px;
     }
 
-    #sec6{
-        padding-bottom: 180px; 
+    #sec6 {
+        padding-bottom: 180px;
     }
-    
-    #sec7{
-        padding-bottom: 100px; 
+
+    #sec7 {
+        padding-bottom: 100px;
     }
 
 
@@ -241,7 +257,7 @@ div.circle.blue {
 
     div#left-content {
         height: 60vh;
-        margin-bottom: -160px;
+        margin-bottom: -18.5vh;
         display: flex;
         -webkit-justify-content: center;
         -webkit-align-items: center;
@@ -356,12 +372,12 @@ div.circle.blue {
     #sec8 .btn-more {
         margin-top: 30px;
     }
-    
-    .tool-wrap{
+
+    .tool-wrap {
         margin-bottom: 20px;
     }
-    
-    .tool-container div:nth-child(5){
+
+    .tool-container div:nth-child(5) {
         margin-bottom: 40px;
     }
 

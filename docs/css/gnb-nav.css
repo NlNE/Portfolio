@@ -43,6 +43,10 @@ nav.sidebar {
     display: none;
 }
 
+.menu-active{
+    overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
     .body{
         padding-top: 60px;
