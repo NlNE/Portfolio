@@ -1,0 +1,78 @@
+body {
+    font-family: 'NanumSquare', sans-serif !important;
+    -webkit-font-family: 'NanumSquare', sans-serif !important;
+    padding-top: 160px;
+}
+
+div.container {
+    width: 1200px;
+}
+
+.left-content {
+    padding-top: 100px;
+}
+
+.left-content h1 {
+    font-size: 6.62rem;
+    font-weight: 800;
+}
+
+.description-wrap {
+    margin-left: 0.4rem;
+}
+
+p.description {
+    display: inline-block;
+    margin-top: 26px;
+    font-size: 2.5rem;
+    line-height: .8rem;
+    letter-spacing: 1.1rem;
+}
+
+p.description2 {
+    display: inline-block;
+    margin-top: 26px;
+    font-size: 2.5rem;
+    line-height: .8rem;
+    letter-spacing: .67rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    div.container {
+        width: 100%;
+    }
+
+    .left-content h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .description-wrap {
+        margin-left: 0.4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    p.description {
+        margin-top: 6px;
+        font-size: 1.5rem;
+        letter-spacing: .6rem;
+    }
+
+    p.description2 {
+        margin-top: 6px;
+        font-size: 1.5rem;
+        letter-spacing: .35rem;
+    }
+
+    .mockup {
+        text-align: center;
+    }
+
+    .mockup img {
+        width: 80%;
+        margin-left: 7vw;
+    }
+}
