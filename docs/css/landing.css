@@ -1,0 +1,39 @@
+body {
+    font-family: 'NanumSquare', sans-serif !important;
+    -webkit-font-family: 'NanumSquare', sans-serif !important;
+    padding-top: 16vh;
+    padding-bottom: 20vh;
+}
+
+.row.content img {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    margin-top: 4vh;
+}
+
+h1.title {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+p.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+p.description {
+    text-align: center;
+    color: #bbbbbb;
+            border-top: 1px solid #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+    h1.title {
+        font-size: 3rem;
+    }
+
+    p.title {
+        font-size: 1rem;
+    }
+}
