@@ -17,11 +17,19 @@ div.container {
     font-weight: 800;
 }
 
-.description-wrap {
+.text-wrap {
     margin-left: 0.4rem;
 }
 
-p.description {
+div.point {
+    width: 2px;
+    height: 12px;
+    background-color: #5f5f5f;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+p.text1-1 {
     display: inline-block;
     margin-top: 26px;
     font-size: 2.5rem;
@@ -29,7 +37,7 @@ p.description {
     letter-spacing: 1.1rem;
 }
 
-p.description2 {
+p.text1-2 {
     display: inline-block;
     margin-top: 26px;
     font-size: 2.5rem;
@@ -37,10 +45,87 @@ p.description2 {
     letter-spacing: .67rem;
 }
 
+.text-wrap2 {
+    margin-top: 84px;
+    padding-top: 20px;
+}
+
+.text-wrap2-1 {
+    padding-top: 13px;
+}
+
+p.text2-1,
+p.text2-2,
+p.text3 {
+    color: #5f5f5f;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.text-wrap3 {
+    margin-top: 80px;
+}
+
+.icon {
+    margin-top: 20px;
+}
+
+.icon img:last-child {
+    margin-left: 29px;
+}
+
+.mockup {
+    margin-bottom: 30px;
+}
+
+.title {
+    margin: 120px 0 40px 0;
+    font-size: 3.33rem;
+    color: #5f5f5f;
+}
+
+.title > span {
+    color: #ff5462;
+    margin-left: 15px;
+}
+
+.screenshot img {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+}
+
+.screenshot.sc-line {
+    margin-bottom: 30px;
+}
+
+.screenshot.sc-line:last-child {
+    margin-bottom: 0;
+}
+
+#sec08 {
+    margin-bottom: 14vh;
+}
+
 @media screen and (max-width: 768px) {
+
+    body {
+        padding-top: 0;
+    }
 
     div.container {
         width: 100%;
+    }
+
+    div.row {
+        margin: auto 0;
+    }
+
+    section {
+        margin-top: 10vh;
+    }
+
+    .left-content {
+        padding-top: 6vh;
     }
 
     .left-content h1 {
@@ -49,30 +134,72 @@ p.description2 {
         text-align: center;
     }
 
-    .description-wrap {
+    .text-wrap {
         margin-left: 0.4rem;
         width: 100%;
         text-align: center;
     }
 
-    p.description {
-        margin-top: 6px;
+
+    p.text1-1 {
+        margin-top: 4vh;
         font-size: 1.5rem;
-        letter-spacing: .6rem;
+        letter-spacing: .7rem;
     }
 
-    p.description2 {
-        margin-top: 6px;
+    p.text1-2 {
+        margin: 1vh .6vh 0 0;
         font-size: 1.5rem;
-        letter-spacing: .35rem;
+        letter-spacing: .43rem;
+    }
+
+    .text-wrap2 {
+        margin-top: 8vh;
+        padding: 1vh 15vw 0 15vw;
+        text-align: left;
+    }
+
+    p.text2-1,
+    p.text2-2,
+    p.text3 {
+        color: #5f5f5f;
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    .text-wrap3 {
+        margin-top: 4vh;
+        padding: 1vh 15vw 0 15vw;
+        text-align: left;
+    }
+
+    .icon {
+        margin-top: 1.25vh;
+    }
+
+    .icon img {
+        width: 30vw;
+    }
+
+    .icon img:last-child {
+        margin-left: 3vw;
     }
 
     .mockup {
-        text-align: center;
+        display: none;
     }
 
-    .mockup img {
-        width: 80%;
-        margin-left: 7vw;
+    .title {
+        font-size: 1.4rem;
+        color: #5f5f5f;
+    }
+
+    .title > span {
+        color: #ff5462;
+        margin-left: 15px;
+    }
+
+    .screenshot.sc-line {
+        margin-bottom: 0;
     }
 }
