@@ -159,7 +159,7 @@ div.circle.blue {
     position: absolute;
     width: 300px;
     height: 60px;
-    line-height: 58px;
+    line-height: 56px;
     border: solid 2px #000;
     border-radius: 60px;
     background: rgba(255, 255, 255, 0.8);
@@ -170,6 +170,11 @@ div.circle.blue {
     font-weight: 900;
     color: #000000;
     cursor: pointer;
+}
+
+.btn-more a{
+    text-decoration: none;
+    color: #fff;
 }
 
 #sec6 .btn-more,
