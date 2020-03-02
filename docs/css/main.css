@@ -2,12 +2,6 @@ body {
     margin: 0 auto;
 }
 
-.loader{
-    width: 100%;
-    height: 100%;
-    background-color: blue;
-}
-
 ul,
 li {
     list-style: none;
