@@ -438,7 +438,6 @@ span.info-content3 {
         animation: none;
         background: linear-gradient(135deg, #E600FF, #002FD5);
         background-size: 100% 240%;
-        overflow-x: hidden;
     }
 
     .slide-menu-wrap {
@@ -480,7 +479,8 @@ span.info-content3 {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        padding-top: 10.7vh;
+        margin: 0;
+        padding: 10.7vh 0 0 8vw;
     }
 
     .logo-wrap {
@@ -544,6 +544,7 @@ span.info-content3 {
         position: relative;
         height: 64vh;
         min-height: 200px;
+        padding-left: 5vw;
         overflow-x: scroll;
     }
 
@@ -561,7 +562,8 @@ span.info-content3 {
 
     .content {
         position: relative;
-        width: 80vw;
+        width: 90vw;
+        margin-right: 8vw;
     }
 
     .content-image {
