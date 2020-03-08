@@ -300,8 +300,7 @@ span.email-main {
 .content-wrap {
     position: relative;
     clear: both;
-    height: 64vh;
-    min-height: 680px;
+    height: 660px;
     overflow-x: scroll;
 }
 
@@ -543,7 +542,7 @@ span.info-content3 {
     .content-wrap {
         position: relative;
         height: 64vh;
-        min-height: 200px;
+        min-height: 400px;
         padding-left: 5vw;
         overflow-x: scroll;
     }
