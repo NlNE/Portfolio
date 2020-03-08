@@ -11,8 +11,6 @@ function showSlideMenu() {
     slideMenu.style['webkitTransform'] = "translate(0px, 0px)";
     slideMenu.style['oTransform'] = "translate(0px, 0px)";
     slideWrap.classList.add('menu-active');
-
-    document.querySelector('body').style['overflow'] = 'hidden';
 }
 
 function closeSlideMenu() {
@@ -23,5 +21,5 @@ function closeSlideMenu() {
     btnSlideOpen.style['display'] = "block";
     slideMenu.removeAttribute("style");
     slideWrap.classList.remove('menu-active');
-    setTimeout(function(){        document.querySelector('body').removeAttribute("style")},1000);
+//    setTimeout(function(){        document.querySelector('body').removeAttribute("style")},1000);
 }

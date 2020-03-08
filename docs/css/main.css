@@ -476,9 +476,11 @@ span.info-content3 {
     }
 
     .left-content {
-        padding-top: 10.7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
-        margin: 0 0 0 8vw;
+        padding-top: 10.7vh;
     }
 
     .logo-wrap {
@@ -533,9 +535,16 @@ span.info-content3 {
     }
 
     .right-content {
-        margin: 6vh 0 0 10vw;
+        margin: 6vh 0;
         width: 100%;
         height: 58vh;
+    }
+
+    .content-wrap {
+        position: relative;
+        height: 64vh;
+        min-height: 200px;
+        overflow-x: scroll;
     }
 
     .content-scroll-box {
@@ -553,7 +562,6 @@ span.info-content3 {
     .content {
         position: relative;
         width: 80vw;
-        margin-right: 10vw;
     }
 
     .content-image {
