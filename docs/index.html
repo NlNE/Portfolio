@@ -5,354 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/gnb-nav.css">
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" media="screen and (min-width:768px)" href="css/onepage-scroll.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900&display=swap&subset=korean" rel="stylesheet">
     <title>NINE-DESIGN</title>
 </head>
 
 <body>
-    <div class="gnb-flex-container">
-        <div class="gnb">
-            <span data-index="1" class="logo">NINE-DESIGN</span>
-            <ul class="gnb-menu">
-                <li class="uiux" data-index="2">UI/UX</li>
-                <li class="other" data-index="6">Other</li>
-                <li class="contact" data-index="8">Contact</li>
-            </ul>
+    <div id="btn-slide-open">
+        <div class="css-slide-open" onclick="showSlideMenu(this);">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </div>
-    <div class="gnb-mobile">
-        <span data-index="1" class="logo">NINE-DESIGN</span>
-        <a class="menu-trigger" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-        <nav class="sidebar">
-            <ul>
-                <li onclick="fnMove('2')">UI/UX</li>
-                <li onclick="fnMove('6')">Other</li>
-                <li onclick="fnMove('8')">Contact</li>
+    <div class="slide-menu-wrap" id="slide-menu-wrap">
+        <div id="btn-slide-close" onclick="closeSlideMenu(); return false;">
+            <div class="css-slide-close" onclick="showSlideMenu(this);">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="slide-menu">
+            <div id="slide-logo">
+                <a href="index.html"><img src="/images/logo/9ood.png" alt=""></a>
+            </div>
+            <ul id="slide-btn">
+                <li><a href="uiux.html">UI/UX</a></li>
+                <li><a href="#">BRANDING</a></li>
+                <li><a href="#">LANDING</a></li>
+                <li><a href="#">ABOUT ME</a></li>
             </ul>
-        </nav>
+            <span id="slide-email">rnwo47@gmail.com</span>
+        </div>
     </div>
-    <div class="main">
-        <section id="sec1">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1">
-                        <div class="inner-1">
-                            <div class="slogan">
-                                <div id="Challenge" class="animation" data-aos="fade-up" data-aos-duration="800">
-                                    <h1>Challenge</h1>
-                                    <h1 class="slogan-dot">.</h1>
-                                </div>
-                                <h1 class="animation" data-aos="fade-up" data-aos-duration="1200">Cold & Hot</h1>
-                                <h1 class="animation" data-aos="fade-up" data-aos-duration="1600">Creatively</h1>
-                            </div>
-                        </div>
-                        <!--inner-1-->
-                    </div>
-                    <!--slogan-->
-                    <div class="col-md-4 offset-md-2 splash">
-                        <img src="images/logo/splash.gif" alt="splash">
-                    </div>
-                </div>
-                <!--row-->
+    <div class="wrap">
+        <div class="left-content">
+            <div class="logo-wrap">
+                <img id="logo" src="/images/logo/9ood.png" alt="">
+                <span class="slogan">시각디자인 전공 / UI / 브랜딩 / IT솔루션 / 통신</span>
             </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec01-->
-        <section id="sec2">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1" id="left-content">
-                        <img id="img01" class="animation" data-aos="fade-up" src="/images/uiux/bePlan/bePlan_01.png" alt="">
-                        <img id="img02" class="animation" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800" src="/images/uiux/bePlan/bePlan_02.png" alt="">
-                        <img id="img03" class="animation" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="800" src="/images/uiux/bePlan/bePlan_03.png" alt="">
-                        <div class="circle pink"></div>
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <div class="right-wrap">
-                            <div class="app-name-wrap">
-                                <span class="app-sub">B2B</span>
-                                <span class="app-name">Be:Plan</span>
-                            </div>
-                            <div class="description-wrap">
-                                <p class="description">
-                                    android - xhdpi~xxxhdpi<br />
-                                    ios-@2X~@3X
-                                </p>
-                                <p class="description2">
-                                    UI 디자인 수정 > 디자인 가이드 작성<br />(UI가이드 프로그램 사용 이전 > PPT 가이드)
-                                </p>
-                            </div>
-                            <div class="sub-img">
-                                <div class="btn-more" onclick="location.href='/bePlan.html'">
-                                    +MORE
-                                </div>
-                                <img src="/images/uiux/bePlan/details/guide/slide6.jpeg" alt="">
-                            </div>
-                        </div>
-                        <!--rightWrap-->
-                    </div>
-                    <!--col-md-4-->
-                </div>
-                <!--row-->
+            <div class="down_text">
+                <img src="/images/icon/down_text.png" alt="">
+                <img id="down_arrow" src="/images/icon/down_arrow.png" alt="">
             </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec02-->
-        <section id="sec3">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1" id="left-content">
-                        <img id="img01" class="animation" data-aos="fade-up" src="/images/uiux/timeInOut/timeInOut_01.png" alt="">
-                        <img id="img02" class="animation" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800" src="/images/uiux/timeInOut/timeInOut_02.png" alt="">
-                        <img id="img03" class="animation" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="800" src="/images/uiux/timeInOut/timeInOut_03.png" alt="">
-                        <div class="circle blue"></div>
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <div class="right-wrap">
-                            <div class="app-name-wrap">
-                                <span class="app-name">Time in Out</span>
-                            </div>
-                            <div class="description-wrap">
-                                <p class="description">
-                                    android - xhdpi~xxxhdpi<br />
-                                    ios-@2X~@3X
-                                </p>
-                                <p class="description2">
-                                    UI 디자인 수정 > 디자인 가이드 작성<br />(UI가이드 프로그램 사용 이전 > PPT 가이드)
-                                </p>
-                            </div>
-                            <div class="sub-img">
-                                <div class="btn-more" onclick="location.href='/timeInOut.html'">
-                                    +MORE
-                                </div>
-                                <img src="/images/uiux/timeInOut/details/slide2.jpeg" alt="">
-                            </div>
-                        </div>
-                        <!--rightWrap-->
-                    </div>
-                    <!--col-md-4-->
-                </div>
-                <!--row-->
+            <div>
+                <p class="description">
+                    안녕하세요.<br />
+                    조재구입니다.
+                </p>
+                <p class="description2">
+                    - 다양한 업무환경의 경험을 통한 노하우<br />
+                    - 맡은 업무에 최선을 다하는 근성과 체력<br />
+                    - 빠른 결과도출과 디자인 작업
+                </p>
+                <span class="description3">기대 이상의 퍼포먼스를 보여드리겠습니다.</span>
             </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec03-->
-        <section id="sec4">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1" id="left-content">
-                        <img id="img-full" class="animation" data-aos="flip-left" src="/images/uiux/pumaAMS/pumaAms_02.png" alt="">
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <div class="right-wrap">
-                            <div class="app-name-wrap">
-                                <span class="app-name">PUMA AMS</span>
-                            </div>
-                            <div class="description-wrap">
-                                <p class="description">
-                                    Agency Management System
-                                </p>
-                                <p class="description2">
-                                    PC 웹 시안 작업<br />
-                                    심플리(Sympli)사용<br />
-                                    퍼블리싱 가이드 전달
-                                </p>
-                            </div>
-                            <div class="sub-img">
-                                <div class="btn-more" onclick="location.href='pumaAms.html'">
-                                    +MORE
-                                </div>
-                                <img src="/images/uiux/pumaAMS/pumaAms_01.png" alt="">
-                            </div>
-                        </div>
-                        <!--rightWrap-->
-                    </div>
-                    <!--col-md-4-->
+            <div class="info-main-wrap">
+                <img id="icon-gps-main" src="/images/icon/icon_gps.png" alt="">
+                <div class="info-main-inner">
+                    <p class="info-main">
+                        인천광역시 서구 칠천왕로 29<br />
+                        +8010 7299 9401
+                    </p>
+                    <span class="email-main">rnwo47@gmail.com</span>
                 </div>
-                <!--row-->
             </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec04-->
-        <section id="sec5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1" id="left-content">
-                        <img id="img-full" class="animation" data-aos="flip-right" src="/images/uiux/asIsay/asIsay_01.png" alt="">
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <div class="right-wrap">
-                            <div class="app-name-wrap">
-                                <span class="app-name">말하는대로</span>
-                            </div>
-                            <div class="description-wrap">
-                                <p class="description">
-                                    android - xhdpi~xxxhdpi<br />
-                                    ios-@2X~@3X
-                                </p>
-                                <p class="description2">
-                                    UI 디자인 작업<br />
-                                    심플리(Sympli)사용
-                                </p>
-                            </div>
-                            <div class="sub-img">
-                                <div class="btn-more" onclick="location.href='asIsay.html'">
-                                    +MORE
-                                </div>
-                                <img src="/images/uiux/asIsay/asIsay_02.png" alt="">
-                            </div>
+        </div>
+        <div class="right-content">
+            <div class="content-wrap">
+                <div class="content-scroll-box">
+                    <div class="content">
+                        <div class="info-content-wrap">
+                            <img id="icon-arrow" src="/images/icon/icon_arrow.png" alt="">
+                            <span class="info-content1">UI/UX</span>
+                            <span class="info-content2">APP1</span>
+                            <span class="info-content3">Lorem ipsum dolor sit amet</span>
                         </div>
-                        <!--rightWrap-->
+
+                        <div class="stroke-white"></div>
+                        <div class="content-image" style="background-image: url(images/landing/01.jpg);"></div>
                     </div>
-                    <!--col-md-4-->
-                </div>
-                <!--row-->
-            </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec05-->
-        <section id="sec6">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1" id="left-content">
-                        <img id="img-full" class="animation" data-aos="fade" src="/images/landing/upload.png" alt="">
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <div class="right-wrap">
-                            <div class="app-name-wrap">
-                                <span class="app-name">LANDING</span>
-                            </div>
-                            <div class="description-wrap">
-                                <p class="description">
-                                    다양한 상품, 스타일의 랜딩페이지 작업
-                                </p>
-                                <p class="description2">
-                                    기획서 검토 > 가격 협의 > 초안 전달<br />
-                                    > 수정 > 원본 전달 및 구매확정
-                                </p>
-                            </div>
-                            <div class="sub-img">
-                                <div class="btn-more" onclick="location.href='landing.html'">
-                                    +MORE
-                                </div>
-                            </div>
+                    <!--content-->
+                    <div class="content">
+                        <div class="info-content-wrap">
+                            <img id="icon-arrow" src="/images/icon/icon_arrow.png" alt="">
+                            <span class="info-content1">UI/UX</span>
+                            <span class="info-content2">APP1</span>
+                            <span class="info-content3">Lorem ipsum dolor sit amet</span>
                         </div>
-                        <!--rightWrap-->
+
+                        <div class="stroke-white"></div>
+                        <div class="content-image" style="background-image: url(images/landing/02.jpg);"></div>
                     </div>
-                    <!--col-md-4-->
-                </div>
-                <!--row-->
-            </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec06-->
-        <section id="sec7">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 offset-md-1" id="left-content">
-                        <img id="img-full" class="animation" data-aos="fade" src="/images/branding/branding_pre.png" alt="">
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <div class="right-wrap">
-                            <div class="app-name-wrap">
-                                <span class="app-name">BRANDING</span>
-                            </div>
-                            <div class="description-wrap">
-                                <p class="description">
-                                    옥외 사인물, 브랜딩 현수막/실사/시트 등 디자인 및 시공
-                                </p>
-                                <p class="description2">
-                                    현장 방문 > 디자인 작업 > 인쇄 및 시트 커팅<br />
-                                    > 인테리어 작업 후 시공
-                                </p>
-                            </div>
-                            <div class="sub-img">
-                                <div class="btn-more" onclick="location.href='https://notefolio.net/JGJO/170280'">
-                                    PDF에서 더보기
-                                </div>
-                            </div>
+                    <!--content-->
+                    <div class="content">
+                        <div class="info-content-wrap">
+                            <img id="icon-arrow" src="/images/icon/icon_arrow.png" alt="">
+                            <span class="info-content1">UI/UX</span>
+                            <span class="info-content2">APP1</span>
+                            <span class="info-content3">Lorem ipsum dolor sit amet</span>
                         </div>
-                        <!--rightWrap-->
+
+                        <div class="stroke-white"></div>
+                        <div class="content-image" style="background-image: url(images/landing/03.jpg);"></div>
                     </div>
-                    <!--col-md-4-->
+                    <!--content-->
                 </div>
-                <!--row-->
+                <!--scroll-box-->
             </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec07-->
-        <section id="sec8">
-            <div class="container-fluid">
-                <div class="row tool-container">
-                    <div class="col-md-1 offset-md-1 tool-wrap">
-                        <img class="animation" data-aos="fade-up" src="/images/icon/icon_PS.png" alt="">
-                    </div>
-                    <div class="col-md-1 tool-wrap">
-                        <img class="animation" data-aos="fade-down" src="/images/icon/icon_AI.png" alt="">
-                    </div>
-                    <div class="col-md-1 tool-wrap">
-                        <img class="animation" data-aos="fade-up" src="/images/icon/icon_XD.png" alt="">
-                    </div>
-                    <div class="col-md-1 tool-wrap">
-                        <img class="animation" data-aos="fade-down" src="/images/icon/icon_AE.png" alt="">
-                    </div>
-                    <div class="col-md-1 tool-wrap">
-                        <img class="animation" data-aos="fade-up" src="/images/icon/icon_BR.png" alt="">
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <div class="right-wrap">
-                            <div class="app-name-wrap">
-                                <span class="app-name">CONTACT</span>
-                            </div>
-                            <div class="description-wrap">
-                                <p class="description">
-                                    메일 확인이 습관입니다 :)
-                                </p>
-                                <p class="description2">
-                                    rnwo47@gmail.com<br />
-                                    010.7299.9401
-                                </p>
-                            </div>
-                            <div class="sub-img">
-                                <div class="btn-more">
-                                    <a href="tel:010-7299-9401">전화연결</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--rightWrap-->
-                    </div>
-                    <!--col-md-4-->
-                </div>
-                <!--row-->
-            </div>
-            <!--container-fluid-->
-        </section>
-        <!--section#sec08-->
+            <!--content-wrap-->
+        </div>
+        <!--right-content-->
     </div>
+    <!--wrap-->
     <script src="js/jQuery3.4.1.js"></script>
-    <script src="js/gnb-nav.js"></script>
+    <script src="/js/slide-menu.js"></script>
+    <script src="/js/boxSizing.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.onepage-scroll.js"></script>
+    <script src="/js/horizontal_wheel.js">
+        //가로 스크롤을 일반 마우스 휠로 제어하는 스크립트
+    </script>
+    <script src="/js/aos.js"></script>
     <script type="text/javascript">
         AOS.init({
             delay: 600, //애니메이션 실행까지의 딜레이
         }); //AOS 초기화
-
-        if (screen.width >= 768) {
-            $(".main").onepage_scroll({});
-        }; //원페이지 스크롤
-
     </script>
-</body>
-
-</html>
+</body></html>
