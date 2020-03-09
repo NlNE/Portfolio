@@ -532,11 +532,11 @@ span.info-content3 {
     div.info-main-wrap {
         position: absolute;
         width: 80vw;
-        top: 122vh;
+        top: 126vh;
     }
 
     .right-content {
-        margin: 6vh 0 18vh 0;
+        margin: 6vh 0 24vh 0;
         width: 100%;
         height: 58vh;
     }
