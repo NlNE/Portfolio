@@ -173,6 +173,11 @@ div.title h1 {
     margin: 9.3% 0 3.7% 0;
 }
 
+.row.content-wrap {
+    height: 46vh;
+    min-height: 550px;
+}
+
 .content {
     position: relative;
     width: 596px;
@@ -185,6 +190,7 @@ div.title h1 {
     width: 100%;
     height: 100%;
     background-color: #f0f0f0;
+    background-position: center top;
 }
 
 .info-content-wrap {
@@ -192,7 +198,7 @@ div.title h1 {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 44.8vh;
+    top: 320px;
     left: 0;
     width: 262px;
     height: 194px;
@@ -263,12 +269,21 @@ span.info-content3 {
         -o-transform: translate(40vw, 0px);
     }
 
+    .row.content-wrap {
+        height: 46vh;
+        min-height: 560px;
+    }
+
     .info-content-wrap {
-        top: 14vw;
+        top: 27vw;
     }
 }
 
-@media screen and (max-width: 992px) {}
+@media (max-width: 992px) {
+    #to-top:hover {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .slide-menu-wrap {
@@ -300,6 +315,39 @@ span.info-content3 {
     #slide-email {
         margin-top: 20vh;
     }
+
+    div.title h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        text-shadow: 3px 3px 0 #f8ccff;
+        margin: 20% 0 8% 0;
+    }
+
+    .row.content-wrap {
+        height: auto;
+    }
+
+    .container-md {
+        width: 90% !important;
+    }
+    
+    .content{
+        margin-bottom: 4.6vh;
+    }
+
+    .content-image {
+        width: 100%;
+        height: 150%;
+        max-width: 100%;
+    }
+
+    .info-content-wrap {
+        top: 40vw;
+    }
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .info-content-wrap {
+        top: 54vw;
+    }
+}
