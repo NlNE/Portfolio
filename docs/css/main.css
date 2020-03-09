@@ -561,7 +561,6 @@ span.info-content3 {
         height: 64vh;
         min-height: 400px;
         padding-left: 5vw;
-        margin-right: 5vw;
         overflow-x: scroll;
         overflow-y: hidden;
     }
