@@ -347,6 +347,9 @@ span.email-main {
     left: 14px;
     top: 14px;
     background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 102%;
 }
 
 .stroke-white {
