@@ -8,10 +8,12 @@ $(document).ready(function () {
     })
 
     $('.content-scroll-box').css('width', scrollBoxWidth);
-    
-    var contentImgHeight = $('.content-image').outerHeight(true);
-    
-    var contentWrapHeight = $('.content-wrap').height();
-    
-    $('.content-wrap').css('height', contentWrapHeight + contentImgHeight);
+
+    if (screen.width < 768) {
+        var contentImgHeight = $('.content-image').outerHeight(true);
+
+        var contentWrapHeight = $('.content-wrap').height();
+
+        $('.content-wrap').css('height', contentWrapHeight + contentImgHeight);
+    };
 });
