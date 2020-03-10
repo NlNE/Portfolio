@@ -1,12 +1,17 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-var scrollBoxWidth = 0;
-var contentWidth = $('.content')   
+    var scrollBoxWidth = 0;
+    var contentWidth = $('.content');
 
-contentWidth.each(function(){
-scrollBoxWidth = scrollBoxWidth + $(this).width();
-})
+    contentWidth.each(function () {
+        scrollBoxWidth = scrollBoxWidth + $(this).width();
+    })
 
-$('.content-scroll-box').css('width', scrollBoxWidth)
-
+    $('.content-scroll-box').css('width', scrollBoxWidth);
+    
+    var contentImgHeight = $('.content-image').outerHeight(true);
+    
+    var contentWrapHeight = $('.content-wrap').height();
+    
+    $('.content-wrap').css('height', contentWrapHeight + contentImgHeight);
 });
