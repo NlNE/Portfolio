@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bePlan.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900&display=swap&subset=korean" rel="stylesheet">
+    <title>9ood-DESIGN:UIUX</title>
+</head>
+
+<body>
+    <div id="btn-slide-open">
+        <div id="line-wrapper" onclick="showSlideMenu(this);">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="slide-menu-wrap" id="slide-menu-wrap">
+        <div id="btn-slide-close" onclick="closeSlideMenu(); return false;">
+            <div class="css-slide-close" onclick="showSlideMenu(this);">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="slide-menu">
+            <div id="slide-logo">
+                <a href="index.html"><img src="/images/logo/9ood.png" alt=""></a>
+            </div>
+            <ul id="slide-btn">
+                <li><a href="#">UI/UX</a></li>
+                <li><a href="#">BRANDING</a></li>
+                <li><a href="#">LANDING</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+            </ul>
+            <span id="slide-email">rnwo47@gmail.com</span>
+        </div>
+    </div>
+    <div id="to-top">
+        <img src="/images/icon/to_top.png" alt="">
+    </div>
+    <div class="wrap">
+        <div class="right-top-stamp">UI/UX design</div>
+        <div class="left-center-stamp">9ood-DESIGN Portfolio</div>
+        <div class="bg-circle-02"></div>
+        <div class="bg-circle-03"></div>
+        <div class="container">
+            <div class="row bg-deco">
+                <div class="bg-circle-01">
+                    <h1 class="title">Be:plan</h1>
+                    <div class="desktop-image" style="background-image: url(images/uiux/bePlan/bePlan_desktop.png)"></div>
+                </div>
+                <div class="bg-colon-01">:</div>
+                <div class="bg-colon-02">:</div>
+            </div>
+            <!--row bg-deco-->
+            <div class="row subtitle-wrap">
+                <div class="col-md-10 offset-md-1 subtitle">
+                    <span>OVERVIEW</span>
+                    <div class="hr-long"></div>
+                </div>
+            </div>
+            <!--row subtitle-->
+            <div class="row content">
+                <div class="col-md-2 col-6 offset-md-1 content-img">
+                    <div class="content-img">
+                        <div class="handle"></div>
+                        <img src="/images/uiux/bePlan/details/bePlan_detail_01.png" alt="">
+                    </div>
+                </div>
+                <!--col-->
+                <div class="col-md-2 col-6">
+                    <div class="content-img">
+                        <div class="handle"></div>
+                        <img src="/images/uiux/bePlan/details/bePlan_detail_06.png" alt="">
+                    </div>
+                </div>
+                <!--col-->
+                <div class="col-md-5 offset-md-1">
+                    <div class="description-wrap">
+                        <p class="description-01">모두의 노하우가 나의 문제를 해결해주는<br />
+                            최적의 레시피를 제시하는 플랫폼</p>
+                        <div class="hr-short"></div>
+                        <div class="discription-02">
+                            <span>Solution</span>
+                            <p>
+                                팀원들과의 업무공유를 통한 능률 향상<br />
+                                할 일 리스트 공유와 즉각적인 피드백
+                            </p>
+                        </div>
+                        <div class="discription-03">
+                            <span>Work</span>
+                            <p>
+                                UI 고도화<br />
+                                Android - xhdpi~xxxhdpi<br />
+                                iOS - @2X~@3X<br />
+                            </p>
+                        </div>
+                        <div class="discription-04">
+                            <span>Tool</span>
+                            <p>
+                                Photoshop / Illustrator / PPT(가이드제작)
+                            </p>
+                        </div>
+                    </div>
+                    <!--description-wrap-->
+                </div>
+                <!--col-->
+            </div>
+            <!--row content-->
+        </div>
+    </div>
+    <!--wrap-->
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="/js/slide-menu.js"></script>
+    <script src="/js/to-top.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/js/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            delay: 600, //애니메이션 실행까지의 딜레이
+        }); //AOS 초기화
+    </script>
+</body></html>
