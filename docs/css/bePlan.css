@@ -244,8 +244,12 @@ ul#slide-btn li {
 }
 
 .desktop-image {
-    width: 1260px;
-    height: 522px;
+    background-color: red;
+    width: 100%;
+    height: 0;
+    padding-top: 41.4%;
+    background-position: center top;
+    background-size: 100%;
 }
 
 .subtitle {
@@ -283,7 +287,7 @@ ul#slide-btn li {
 
 .row.content .content-img img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1vw;
     border: 4px solid #000;
 }
 
@@ -311,7 +315,7 @@ ul#slide-btn li {
 
 .
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     .slide-menu-wrap {
         width: 40vw;
         transform: translate(-40vw, 0px);
