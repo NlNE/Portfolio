@@ -233,13 +233,6 @@ ul#slide-btn li {
     padding-top: 50%;
 }
 
-.bg-deco-02 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-}
-
 .bg-circle-02 {
     z-index: -2;
     position: absolute;
@@ -325,6 +318,10 @@ ul#slide-btn li {
     background-color: #000;
 }
 
+.description-wrap{
+    height: 100%;
+}
+
 .description-wrap .description-01 {
     font-weight: 400;
     font-size: 1.5rem;
@@ -350,12 +347,15 @@ ul#slide-btn li {
 
 .iCon-wrap {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
 }
 
 .iCon-wrap img {
     margin: 16px 8px 32px 0;
     width: 65px;
+    height: 65px;
 }
 
 .iCon-circle {
