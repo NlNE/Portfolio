@@ -1,8 +1,12 @@
+html{
+    overflow-x: hidden;
+}
+
 body {
     margin: 0 auto;
     font-family: 'Noto Sans KR', sans-serif !important;
-    overflow-x: hidden;
     padding-bottom: 60px;
+    overflow-x: hidden;
 }
 
 
@@ -349,7 +353,7 @@ div.font-ex p {
     .title {
         z-index: 10;
         position: absolute;
-        margin-top: 32vw;
+        margin-top: 38vw;
         font-size: 3.4rem;
         font-weight: 900;
         color: #fff;
@@ -376,15 +380,15 @@ div.font-ex p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20vw;
+        margin-top: 24vw;
         margin-left: -22vw;
     }
 
     .bg-circle-02 {
         z-index: -2;
         position: absolute;
-        top: -240px;
-        left: -240px;
+        top: -260px;
+        left: -260px;
         width: 360px;
         height: 360px;
         border-radius: 100%;
@@ -392,14 +396,7 @@ div.font-ex p {
     }
 
     .bg-circle-03 {
-        z-index: -2;
-        position: absolute;
-        bottom: -740px;
-        left: 640px;
-        width: 192px;
-        height: 192px;
-        border-radius: 100%;
-        background-color: #fff0f3;
+        display: none;
     }
 
     .desktop-image {
@@ -417,7 +414,7 @@ div.font-ex p {
         width: 58%;
         height: 0;
         padding-top: 98.6%;
-        top: 64vw;
+        top: 68vw;
         left: 32vw;
         background-size: cover;
         background-position: center top;
@@ -430,7 +427,7 @@ div.font-ex p {
         width: 140%;
         height: 0;
         padding-top: 103%;
-        top: 52vw;
+        top: 56vw;
         left: -3.2vw;
         background-size: cover;
         background-position: left top;
