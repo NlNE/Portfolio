@@ -78,8 +78,19 @@ li {
 }
 
 div#btn-slide-open {
-    position: absolute;
-    margin: 4vh 0 0 4vh;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    padding: 16px 0 0 20px;
+}
+
+.btn-slide-open-scrollDown {
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .css-slide-open {
@@ -95,7 +106,7 @@ div#btn-slide-open {
 }
 
 .slide-menu-wrap {
-    z-index: 999;
+    z-index: 1000;
     position: fixed;
     background-color: #0C0C38;
     width: 22vw;
@@ -122,12 +133,12 @@ div#btn-slide-open {
 
 div#btn-slide-close {
     width: 24px;
-    margin: 5vh 0 0 4vh;
+    margin: 30px 0 0 20px;
 }
 
 .css-slide-close {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 .css-slide-close .line:nth-child(1) {
