@@ -249,6 +249,11 @@ li {
     margin-top: 16px;
 }
 
+div.font-ex p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .font-ex-en {
     margin-top: 42px;
 }
@@ -315,11 +320,23 @@ li {
         margin-top: 20px;
     }
 
+    .generate-title-01 div span:nth-last-child(1) {
+        font-weight: 300;
+        color: #707070;
+    }
+
+    .generate-title-02 div span:nth-last-child(1) {
+        font-weight: 300;
+        color: #707070;
+    }
+
     .generate-title-02 {
         margin-top: 40px;
     }
-    
-    .other-03, .other-04, .other-05{
+
+    .other-03,
+    .other-04,
+    .other-05 {
         margin-top: 20px;
     }
 }
