@@ -13,48 +13,6 @@ li {
     padding: 0;
 }
 
-div#btn-slide-open {
-    position: fixed;
-    margin: 4vh 0 0 4vh;
-}
-
-div#btn-slide-open:hover {
-    opacity: 0.6;
-}
-
-.line-wrapper {
-    z-index: 999;
-    width: 24px;
-    height: 20px;
-}
-
-.line {
-    width: 24px;
-    height: 4px;
-    margin-top: 4px;
-    background-color: #000;
-}
-
-.slide-menu-wrap {
-    z-index: 999;
-    position: fixed;
-    background-color: #0C0C38;
-    width: 22vw;
-    height: 100vh;
-    transition: transform 600ms;
-    transform: translate(-22vw, 0px);
-
-    -ms-transition: -ms-transform 600ms;
-    -webkit-transition: -webkit-transform 600ms;
-    -moz-transition: -moz-transform 600ms;
-    -o-transition: -o-transform 600ms;
-
-    -ms-transform: translate(-22vw, 0px);
-    -webkit-transform: translate(-22vw, 0px);
-    -moz-transform: translate(-22vw, 0px);
-    -o-transform: translate(-22vw, 0px);
-}
-
 #to-top {
     z-index: 998;
     position: fixed;
@@ -66,104 +24,6 @@ div#btn-slide-open:hover {
     opacity: 0.4;
 }
 
-.slide-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div#btn-slide-close {
-    width: 24px;
-    margin: 5vh 0 0 4vh;
-}
-
-div#btn-slide-close:hover {
-    opacity: 0.6;
-}
-
-.css-slide-close {
-    width: 24px;
-    height: 24px;
-}
-
-.css-slide-close .line:nth-child(1) {
-    transform: rotate(45deg);
-    width: 30px;
-    height: 4px;
-    margin-top: 4px;
-    background-color: #fff;
-}
-
-.css-slide-close .line:nth-child(2) {
-    transform: rotate(-45deg);
-    width: 30px;
-    height: 4px;
-    margin-top: -4px;
-    background-color: #fff;
-}
-
-.slide-menu div#slide-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 230px;
-    min-height: 148px;
-    margin-top: 7vh;
-    background-color: #E500FF;
-    border-radius: 100px;
-}
-
-div#slide-logo img {
-    width: 120px;
-}
-
-ul#slide-btn {
-    margin-top: 10vh;
-    font-size: 1.87rem;
-    font-weight: 900;
-    color: #fff;
-}
-
-ul#slide-btn a {
-    color: #fff;
-    text-decoration: none;
-}
-
-ul#slide-btn a:hover {
-    color: #E500FF;
-    text-decoration: none;
-}
-
-
-ul#slide-btn li {
-    margin-top: 2vh;
-}
-
-#slide-email {
-    margin-top: 24vh;
-    color: #6D6C87;
-}
-
-.wrap {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    transition: transform 600ms;
-}
-
-.wrap.menu-active {
-    transform: translate(22vw, 0px);
-
-    -ms-transition: -ms-transform 600ms;
-    -webkit-transition: -webkit-transform 600ms;
-    -moz-transition: -moz-transform 600ms;
-    -o-transition: -o-transform 600ms;
-
-    -ms-transform: translate(22vw, 0px);
-    -webkit-transform: translate(22vw, 0px);
-    -moz-transform: translate(22vw, 0px);
-    -o-transform: translate(22vw, 0px);
-}
 
 /*!!! 본문시작 !!!*/
 
@@ -318,7 +178,7 @@ ul#slide-btn li {
     background-color: #000;
 }
 
-.description-wrap{
+.description-wrap {
     height: 100%;
 }
 
@@ -416,35 +276,7 @@ ul#slide-btn li {
 }
 
 @media screen and (max-width: 1100px) {
-    .slide-menu-wrap {
-        width: 40vw;
-        transform: translate(-40vw, 0px);
-        -ms-transform: translate(-40vw, 0px);
-        -webkit-transform: translate(-40vw, 0px);
-        -moz-transform: translate(-40vw, 0px);
-        -o-transform: translate(-40vw, 0px);
-    }
-
-    .slide-menu div#slide-logo {
-        width: 60%;
-        min-height: 80px;
-        margin-top: 7vh;
-        padding: 40px;
-        border-radius: 100px;
-    }
-
-    div#slide-logo img {
-        width: 100%;
-        min-width: 40px;
-    }
-
-    .wrap.menu-active {
-        transform: translate(40vw, 0px);
-        -ms-transform: translate(40vw, 0px);
-        -webkit-transform: translate(40vw, 0px);
-        -moz-transform: translate(40vw, 0px);
-        -o-transform: translate(40vw, 0px);
-    }
+    
 }
 
 @media (max-width: 991px) {
@@ -464,35 +296,6 @@ ul#slide-btn li {
 }
 
 @media screen and (max-width: 768px) {
-    .slide-menu-wrap {
-        width: 100vw;
-        transform: translate(-100vw, 0px);
-        -ms-transform: translate(-100vw, 0px);
-        -webkit-transform: translate(-100vw, 0px);
-        -moz-transform: translate(-100vw, 0px);
-        -o-transform: translate(-100vw, 0px);
-    }
-
-    .slide-menu div#slide-logo {
-        width: 45%;
-        min-height: 80px;
-        margin-top: 7vh;
-        padding: 40px;
-        border-radius: 100px;
-    }
-
-    div#slide-logo img {
-        width: 100%;
-        min-width: 40px;
-    }
-
-    ul#slide-btn {
-        margin-top: 8vh;
-    }
-
-    #slide-email {
-        margin-top: 20vh;
-    }
 
     .desktop-image {
         display: none;
