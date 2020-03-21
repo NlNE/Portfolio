@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $('.content-scroll-box').css('width', scrollBoxWidth);
 
-    if (screen.width < 768) {
+    if (window.innerWidth <= 768) {
         var contentImgHeight = $('.content-image').outerHeight(true);
 
         var contentWrapHeight = $('.content-wrap').height();
