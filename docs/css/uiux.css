@@ -88,6 +88,7 @@ div.title h1 {
     height: 195px;
     padding: 30px 0 0 24px;
     background-color: #000;
+    cursor: pointer;
 }
 
 span.info-content1 {
