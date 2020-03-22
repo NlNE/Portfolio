@@ -305,6 +305,7 @@ span.email-main {
 }
 
 .right-content {
+    margin: auto 0;
     margin-left: 5.2vw;
     width: 100%;
     height: 100vh;
@@ -450,8 +451,69 @@ span.info-content3 {
         -o-transform: translate(40vw, 0px);
     }
 
-    div.info-main-wrap-m {
+    .left-content-inner {
+        width: 36vw;
+    }
+
+    .logo-wrap {
+        position: relative;
+        width: 300px;
+        height: 180px;
+    }
+
+    span.slogan {
+        position: absolute;
+        color: #fff;
+        top: 140px;
+        left: 100px;
+        letter-spacing: -0.8px;
+        opacity: 0.6;
+    }
+
+    p.description {
+        line-height: 3.7rem;
+        font-size: 3rem;
+        color: #fff;
+        margin: 6vh 0 1vw 2vw;
+    }
+
+    p.description2 {
         display: none;
+    }
+
+    div.info-main-wrap {
+        display: flex;
+        width: 100%;
+        height: 75px;
+        color: #fff;
+        margin-top: 6vh;
+    }
+
+    .content-wrap {
+        position: relative;
+        clear: both;
+        height: 540px;
+        overflow-x: scroll;
+    }
+
+    .content {
+        position: relative;
+        width: 580px;
+        margin-right: 82px;
+    }
+
+    .info-content-wrap {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 32vh;
+        left: 0;
+        width: 262px;
+        height: 194px;
+        padding: 32px 0 0 24px;
+        background-color: #fff;
+        cursor: pointer;
     }
 }
 
@@ -506,6 +568,14 @@ span.info-content3 {
         padding: 10.7vh 0 0 8vw;
     }
 
+    .left-content-inner {
+        width: 100vw;
+    }
+    
+    p.description2 {
+        display: block;
+    }
+    
     .logo-wrap {
         position: relative;
         width: 59.7vw;
@@ -637,7 +707,7 @@ span.info-content3 {
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 38vh;
+        top: 46vh;
         left: 0;
         width: 262px;
         height: 160px;
