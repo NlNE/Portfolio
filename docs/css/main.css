@@ -249,27 +249,46 @@ span.slogan {
     display: none;
 }
 
-p.description {
-    line-height: 3.7rem;
-    font-size: 3rem;
-    color: #fff;
-    margin: 5vh 0 0 2vw;
+.icons {
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    margin-top: 5.4vh;
 }
 
-p.description2 {
-    font-weight: 300;
-    color: #fff;
-    margin: 3vh 0 2.2vh 2vw;
+#photoshop,
+#illustrator,
+#adobeXD,
+#afterEffect,
+#bracket,
+#figma {
+    width: 83px;
+    height: 80px;
+    background-image: url(/images/icon/icon_sprite.png);
+    margin: 10px;
 }
 
-span.description3 {
-    font-weight: 700;
-    color: #fff;
-    background-color: #000;
-    width: 298px;
-    height: 98px;
-    margin: 2.2vh 0 0 2vw;
-    padding: 0 8px 2px 8px;
+#photoshop {
+    background-position: 0 0;
+}
+
+#illustrator {
+    background-position: -85px 0;
+}
+
+#adobeXD {
+    background-position: -170px 0;
+}
+
+#afterEffect {
+    background-position: -255px 0;
+}
+
+#bracket {
+    background-position: -340px 0;
+}
+
+#figma {
+    background-position: -425px 0;
 }
 
 div.info-main-wrap {
@@ -470,17 +489,6 @@ span.info-content3 {
         opacity: 0.6;
     }
 
-    p.description {
-        line-height: 3.7rem;
-        font-size: 3rem;
-        color: #fff;
-        margin: 6vh 0 1vw 2vw;
-    }
-
-    p.description2 {
-        display: none;
-    }
-
     div.info-main-wrap {
         display: flex;
         width: 100%;
@@ -571,11 +579,7 @@ span.info-content3 {
     .left-content-inner {
         width: 86vw;
     }
-    
-    p.description2 {
-        display: block;
-    }
-    
+
     .logo-wrap {
         position: relative;
         width: 59.7vw;
@@ -596,31 +600,10 @@ span.info-content3 {
         right: 9.3vw;
     }
 
-    #down_arrow {
-        margin-top: 10px;
-        width: 17px;
-        height: 90px;
-    }
-
-    p.description {
-        line-height: 2.2rem;
-        font-size: 2rem;
-        margin: 7.3vh 0 0 2vw;
-    }
-
-    p.description2 {
-        font-weight: 300;
-        margin: 3vh 0 2.2vh 2vw;
-    }
-
-    span.description3 {
-        font-weight: 700;
-        color: #fff;
-        background-color: #000;
-        width: 298px;
-        height: 98px;
-        margin: 2.2vh 0 0 2vw;
-        padding: 0 8px 2px 8px;
+    .icons {
+        display: -webkit-flex;
+        flex-flow: row wrap;
+        margin-top: 10vh;
     }
 
     div.info-main-wrap {
