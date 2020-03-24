@@ -249,6 +249,10 @@ span.slogan {
     display: none;
 }
 
+.description{
+    display: none;
+}
+
 .icons {
     display: -webkit-flex;
     flex-flow: row wrap;
@@ -600,10 +604,25 @@ span.info-content3 {
         right: 9.3vw;
     }
 
+    #down_arrow {
+        margin-top: 10px;
+        width: 17px;
+        height: 90px;
+    }
+
+    .description {
+        display: block;
+        font-weight: 400;
+        line-height: 3.4rem;
+        font-size: 3rem;
+        margin: 10vh 0 0 2vw;
+        color: white;
+    }
+
     .icons {
         display: -webkit-flex;
         flex-flow: row wrap;
-        margin-top: 10vh;
+        margin-top: 4vh;
     }
 
     div.info-main-wrap {
@@ -620,7 +639,7 @@ span.info-content3 {
     }
 
     .right-content {
-        margin: 6vh 0 0 0;
+        margin: 3vh 0 0 0;
         width: 100%;
         height: auto;
     }
