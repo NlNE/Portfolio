@@ -475,7 +475,7 @@ span.info-content3 {
     }
 
     .left-content-inner {
-        width: 36vw;
+        width: 32vw;
     }
 
     .logo-wrap {
@@ -504,14 +504,14 @@ span.info-content3 {
     .content-wrap {
         position: relative;
         clear: both;
-        height: 540px;
+        height: 520px;
         overflow-x: scroll;
     }
 
     .content {
         position: relative;
-        width: 580px;
-        margin-right: 82px;
+        width: 540px;
+        margin-right: 60px;
     }
 
     .info-content-wrap {
