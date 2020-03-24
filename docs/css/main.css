@@ -586,7 +586,7 @@ span.info-content3 {
     }
 
     .left-content-inner {
-        width: 86vw;
+        width: 100%;
     }
 
     .logo-wrap {
@@ -631,7 +631,7 @@ span.info-content3 {
         flex-flow: row wrap;
         margin-top: 3vh;
         justify-content: center;
-        width: 400px;
+        width: 375px;
         margin: 0 auto;
     }
 
