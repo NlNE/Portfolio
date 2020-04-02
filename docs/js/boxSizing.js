@@ -1,5 +1,4 @@
-$(document).ready(function () {
-
+$(document).ready(function () {    
     var scrollBoxWidth = 0;
     var contentWidth = $('.content');
 

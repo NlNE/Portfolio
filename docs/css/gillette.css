@@ -268,8 +268,16 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        padding-bottom: 80px;
+    }
+    
     .deco-1 {
         display: none;
+    }
+    
+    .title img{
+        width: 200px;
     }
 
     .desc-01 p {
@@ -304,5 +312,9 @@ li {
     .window-inner-style-4,
     .window-inner-style-6 {
         margin-bottom: 30px;
+    }
+    
+    #product-page{
+        margin-top: 30px;
     }
 }

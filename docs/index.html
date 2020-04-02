@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div class="loading">
+        <img src="/images/icon/Infinity-1s-200px.gif" alt="">
+    </div>
     <div id="btn-slide-open">
         <div class="css-slide-open" onclick="showSlideMenu(this);">
             <div class="line"></div>
@@ -140,15 +143,6 @@
         <!--info-main-wrap-->
     </div>
     <!--wrap-->
-    <script type="text/javascript">
-        jQuery(function($) {
-
-            window.onresize = function() {
-                document.location.reload();
-            };
-
-        });
-    </script>
     <script src="js/jQuery3.4.1.js"></script>
     <script src="/js/slide-menu.js"></script>
     <script src="/js/boxSizing.js"></script>
@@ -158,6 +152,11 @@
         //가로 스크롤을 일반 마우스 휠로 제어하는 스크립트
     </script>
     <script src="/js/aos.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loading").fadeOut();
+        });
+    </script>
     <script type="text/javascript">
         AOS.init({
             delay: 600, //애니메이션 실행까지의 딜레이

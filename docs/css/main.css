@@ -70,6 +70,21 @@ body {
     overflow-x: hidden;
 }
 
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img {
+    width: 10%;
+}
+
 ul,
 li {
     list-style: none;
@@ -541,6 +556,10 @@ span.info-content3 {
         animation: none;
         background: linear-gradient(135deg, #E600FF, #002FD5);
         background-size: 100% 240%;
+    }
+
+    .loading img {
+        width: 30%;
     }
 
     .slide-menu-wrap {
