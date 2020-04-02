@@ -2,6 +2,21 @@ html {
     overflow-x: hidden;
 }
 
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img {
+    width: 10%;
+}
+
 div#btn-slide-open {
     z-index: 999;
     width: 100%;
@@ -186,6 +201,11 @@ ul#slide-btn li {
 }
 
 @media screen and (max-width: 768px) {
+
+    .loading img {
+        width: 30%;
+    }
+
     .slide-menu-wrap {
         width: 100vw;
         transform: translate(-100vw, 0px);

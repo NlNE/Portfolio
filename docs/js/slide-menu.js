@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('.loading').fadeOut();
+});
+
+
 function showSlideMenu() {
     var btnSlideOpen = document.getElementById('btn-slide-open');
     var slideMenu = document.getElementById('slide-menu-wrap');
