@@ -261,6 +261,7 @@ span.slogan-m {
     display: -webkit-flex;
     flex-flow: row wrap;
     margin-top: 5.4vh;
+    width: 240px;
 }
 
 #photoshop,
@@ -269,8 +270,8 @@ span.slogan-m {
 #afterEffect,
 #bracket,
 #figma {
-    width: 83px;
-    height: 80px;
+    width: 50px;
+    height: 48px;
     background-image: url(/images/icon/icon_sprite.png);
     margin: 10px;
 }
@@ -280,23 +281,23 @@ span.slogan-m {
 }
 
 #illustrator {
-    background-position: -85px 0;
+    background-position: -51px 0;
 }
 
 #adobeXD {
-    background-position: -170px 0;
+    background-position: -102px 0;
 }
 
 #afterEffect {
-    background-position: -255px 0;
+    background-position: -153px 0;
 }
 
 #bracket {
-    background-position: -340px 0;
+    background-position: -204px 0;
 }
 
 #figma {
-    background-position: -425px 0;
+    background-position: -255px 0;
 }
 
 div.info-main-wrap {
@@ -631,7 +632,7 @@ span.info-content3 {
         flex-flow: row wrap;
         margin-top: 3vh;
         justify-content: center;
-        width: 375px;
+        width: 240px;
         margin: 0 auto;
     }
 
