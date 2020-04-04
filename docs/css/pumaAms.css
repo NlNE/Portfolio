@@ -182,6 +182,29 @@ p.slogan {
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        padding-bottom: 80px;
+    }
+
+    .title h1 {
+        font-size: 5rem;
+        font-weight: 900;
+        color: #000;
+    }
+
+    .work-wrap {
+        margin-top: 18px;
+    }
+
+    p.slogan {
+        font-size: 0.6rem;
+        position: absolute;
+        top: 80px;
+        right: -80px;
+        width: 200px;
+        margin: 0;
+    }
+
     .desc {
         font-weight: 300;
         position: absolute;
