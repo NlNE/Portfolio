@@ -284,7 +284,7 @@ ul#slide-btn li {
 @media screen and (max-width: 768px) {
 
     .loading img {
-        width: 20%;
+        width: 10%;
     }
 
     .slide-menu-wrap {

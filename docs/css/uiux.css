@@ -78,6 +78,10 @@ div.title h1 {
     padding-top: 96%;
 }
 
+.content {
+    cursor: pointer;
+}
+
 .info-content-wrap {
     position: absolute;
     display: flex;
@@ -88,7 +92,6 @@ div.title h1 {
     height: 195px;
     padding: 30px 0 0 24px;
     background-color: #000;
-    cursor: pointer;
 }
 
 span.info-content1 {
