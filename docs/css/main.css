@@ -218,9 +218,27 @@ div#btn-slide-open {
 }
 
 .slide-menu {
+    width: 100%;
+    height: 90%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide-menu a{
+    width: 60%;
+}
+
+.slide-menu div#slide-logo {
+    width: 100%;
+    padding-top: 62%;
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #E500FF;
+    border-radius: 1000px;
 }
 
 div#btn-slide-close {
@@ -249,25 +267,11 @@ div#btn-slide-close {
     background-color: #fff;
 }
 
-.slide-menu div#slide-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 230px;
-    min-height: 148px;
-    margin-top: 7vh;
-    background-color: #E500FF;
-    border-radius: 100px;
-}
-
-div#slide-logo img {
-    width: 120px;
-}
-
 ul#slide-btn {
-    margin-top: 10vh;
+    margin-top: 8vh;
     font-size: 1.87rem;
     font-weight: 900;
+    text-align: center;
     color: #fff;
 }
 
@@ -287,7 +291,8 @@ ul#slide-btn li {
 }
 
 #slide-email {
-    margin-top: 24vh;
+    text-align: center;
+    margin-top: 12vh;
     color: #6D6C87;
 }
 
@@ -501,7 +506,7 @@ span.email-main {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 44.8vh;
+    bottom: 4%;
     left: 0;
     width: 262px;
     height: 194px;
@@ -548,19 +553,6 @@ span.info-content3 {
         -webkit-transform: translate(-40vw, 0px);
         -moz-transform: translate(-40vw, 0px);
         -o-transform: translate(-40vw, 0px);
-    }
-
-    .slide-menu div#slide-logo {
-        width: 60%;
-        min-height: 80px;
-        margin-top: 7vh;
-        padding: 40px;
-        border-radius: 100px;
-    }
-
-    div#slide-logo img {
-        width: 100%;
-        min-width: 40px;
     }
 
     .wrap.menu-active {
@@ -610,20 +602,6 @@ span.info-content3 {
         position: relative;
         width: 540px;
         margin-right: 60px;
-    }
-
-    .info-content-wrap {
-        z-index: 1;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 32vh;
-        left: 0;
-        width: 262px;
-        height: 194px;
-        padding: 32px 0 0 24px;
-        background-color: #fff;
-        cursor: pointer;
     }
 }
 
@@ -675,28 +653,11 @@ span.info-content3 {
         -moz-transform: translate(-100vw, 0px);
         -o-transform: translate(-100vw, 0px);
     }
-
-    .slide-menu div#slide-logo {
-        width: 45%;
-        min-height: 80px;
-        margin-top: 7vh;
-        padding: 40px;
-        border-radius: 100px;
+    
+    .slide-menu a{
+        width: 56%;
     }
-
-    div#slide-logo img {
-        width: 100%;
-        min-width: 40px;
-    }
-
-    ul#slide-btn {
-        margin-top: 8vh;
-    }
-
-    #slide-email {
-        margin-top: 20vh;
-    }
-
+    
     .wrap {
         flex-direction: column;
     }
@@ -844,7 +805,7 @@ span.info-content3 {
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 46vh;
+        bottom: 12%;
         left: 0;
         width: 262px;
         height: 160px;
