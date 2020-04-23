@@ -14,6 +14,47 @@ li {
     padding: 0;
 }
 
+div#btn-slide-back {
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    padding: 28px 0 0 20px;
+}
+
+.css-slide-back {
+    width: 24px;
+    height: 24px;
+}
+
+.css-slide-back .line:nth-child(1) {
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 4px;
+    margin-top: -6px;
+    background-color: #000;
+}
+
+.css-slide-back .line:nth-child(2) {
+    transform: rotate(45deg);
+    width: 20px;
+    height: 4px;
+    margin-top: 7px;
+    background-color: #000;
+}
+
+.btn-slide-back-scrollDown {
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.css-slide-back .line-scrollDown {
+    background-color: #fff !important;
+}
+
 #to-top {
     z-index: 998;
     position: fixed;
