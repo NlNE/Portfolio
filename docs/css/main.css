@@ -59,6 +59,10 @@ animation: bg-gradient 16s ease infinite;
     }
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     margin: 0 auto;
     height: 100vh;
